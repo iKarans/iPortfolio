@@ -1,0 +1,40 @@
+.nav-bar {
+    height: 50px;
+    padding: 5px 2.5% 5px 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    background-color: rgba(31, 32, 38, 0.9);
+    &__memoji {
+        height : 35px;
+        object-fit: contain;
+    }
+    &__links {
+        display: flex;
+        flex: 0.9;
+        justify-content: space-around;
+        align-items: center;;
+        list-style: none;
+        &__link {
+            a {
+                text-decoration: none;
+                color: #fff;
+                &:hover {
+                    // color: $primary-color;
+                    color: blue;
+                }
+            }
+        }
+    }
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 0.1;
+    }
+}
