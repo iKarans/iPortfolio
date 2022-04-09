@@ -1,3 +1,8 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+@import "../../sass/resets.scss";
+@import "../../sass/typography";
+
 .nav-bar {
     height: 50px;
     padding: 5px 2.5% 5px 2.5%;
@@ -8,7 +13,6 @@
     top: 0;
     font-size: 25px;
     font-weight: 700;
-    color: #fff;
     background-color: rgba(31, 32, 38, 0.9);
     &__memoji {
         height : 35px;
@@ -19,14 +23,10 @@
         flex: 0.9;
         justify-content: space-around;
         align-items: center;;
-        list-style: none;
         &__link {
             a {
-                text-decoration: none;
-                color: #fff;
                 &:hover {
-                    // color: $primary-color;
-                    color: blue;
+                    color: $primary-color;
                 }
             }
         }

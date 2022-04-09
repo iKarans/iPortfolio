@@ -5,7 +5,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import './App.css';
 import particlesOptions from "./particles.json";
 import { ISourceOptions } from "tsparticles";
-import { Landing } from './components/pages/Landing/Landing';
+import { Landing } from './pages/Landing/Landing';
 import { NavBar } from './components/NavBar/NavBar';
 
 function App() {

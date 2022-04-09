@@ -1,0 +1,62 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+@import "../../sass/resets.scss";
+@import "../../sass/typography";
+
+$heading-font: 53px;
+
+.landing {
+    display: grid;
+    grid-gap: 10px;;
+    padding: 0 5%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    &__heading {
+        align-self: end;
+        text-align: start;
+        justify-self: start;
+        font-size: $heading-font;
+        height: 60%;
+        &__karan {
+            color: $primary-color;
+        }
+    }
+    &__quote-container {
+        align-self: end;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+        height: 60%;
+        &__quote {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            font-size: 24px;
+            text-align: center;
+            font-weight: 500;
+        }
+    }
+    &__memoji {
+        height: 325px;
+        object-fit: contain;
+        align-self: start;
+    }
+    &__explore {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: start;
+        width: 50%;
+        height: $heading-font;
+        border-radius: 25px;
+        background-color: $primary-color;
+        font-size: 25px;
+        font-weight: 500;
+        justify-self: start;
+        &:hover {
+            background-color: $text-color;
+            color: $primary-color;
+        }
+    }
+}
