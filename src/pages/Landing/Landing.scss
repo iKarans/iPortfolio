@@ -4,6 +4,8 @@
 @import "../../sass/typography";
 
 $heading-font: 53px;
+$quote-font: 26px;
+$memoji-height: 325px;
 
 .landing {
     display: grid;
@@ -29,16 +31,17 @@ $heading-font: 53px;
         grid-template-rows: auto auto;
         grid-gap: 10px;
         height: 60%;
+        width: 90%;
         &__quote {
             grid-column: 2 / 3;
             grid-row: 2 / 3;
-            font-size: 24px;
+            font-size: $quote-font;
             text-align: center;
             font-weight: 500;
         }
     }
     &__memoji {
-        height: 325px;
+        height: $memoji-height;
         object-fit: contain;
         align-self: start;
     }
@@ -51,7 +54,7 @@ $heading-font: 53px;
         height: $heading-font;
         border-radius: 25px;
         background-color: $primary-color;
-        font-size: 25px;
+        font-size: $quote-font;
         font-weight: 500;
         justify-self: start;
         &:hover {
