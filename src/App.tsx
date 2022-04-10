@@ -8,6 +8,7 @@ import { ISourceOptions } from "tsparticles";
 import { Landing } from './pages/Landing/Landing';
 import { NavBar } from './components/NavBar/NavBar';
 import { About } from './pages/About/About';
+import { Portfolio } from './pages/Portfolio/Portfolio';
 
 function App() {
     return (
@@ -125,6 +126,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Landing />} />
                 <Route path="/About" element={<About />} />
+                <Route path="/Portfolio" element={<Portfolio />} />
             </Routes>
         </div>
     );

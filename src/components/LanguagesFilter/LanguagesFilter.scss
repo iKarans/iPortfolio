@@ -1,0 +1,12 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+@import "../../sass/resets.scss";
+@import "../../sass/typography";
+
+.languages-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+}
