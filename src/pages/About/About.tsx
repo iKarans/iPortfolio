@@ -1,4 +1,5 @@
 import React from 'react';
+import { SkillGrid } from '../../components/SkillGrid/SkillGrid';
 import { StackGrid } from '../../components/StackGrid/StackGrid';
 import { Title } from '../../components/Title/Title';
 import "./About.scss";
@@ -18,6 +19,7 @@ export const About: React.FC<AboutProps> = ({}) => {
                     The endless learning potential combined with the ability to work on projects that have a meaningful impact on people’s lives consolidated my decision to pursue a career in this field.
                 </p>
                 <StackGrid />
+                <SkillGrid />
             </div>
         );
 }
