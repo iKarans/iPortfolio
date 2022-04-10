@@ -15,7 +15,7 @@ export const NavBar: React.FC<NavBarProps> = ({navLinks}) => {
                 <ul className="nav-bar__links">
                     {navLinks.map((link, index) => {
                         return <li className='nav-bar__links__link'>
-                            <Link to={link}>{link}</Link>
+                            <Link to={link == "Home" ? "/" : link}>{link}</Link>
                         </li>
                     })}
                 </ul>

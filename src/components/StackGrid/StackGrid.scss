@@ -1,0 +1,24 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+@import "../../sass/resets.scss";
+@import "../../sass/typography";
+
+.stack-grid {
+    border: 5px solid #3F8EFC;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 10px;
+    width: 50%;
+    &__heading {
+        font-size: 40px;
+        align-self: center;
+        grid-column: 1 / 4;
+    }
+    &__icon {
+        font-size: 40px;
+    }
+}

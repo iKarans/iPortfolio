@@ -7,6 +7,7 @@ import particlesOptions from "./particles.json";
 import { ISourceOptions } from "tsparticles";
 import { Landing } from './pages/Landing/Landing';
 import { NavBar } from './components/NavBar/NavBar';
+import { About } from './pages/About/About';
 
 function App() {
     return (
@@ -123,6 +124,7 @@ function App() {
             <NavBar navLinks={["Home", "About", "Portfolio", "Contact"]} />
             <Routes>
                 <Route path="/" element={<Landing />} />
+                <Route path="/About" element={<About />} />
             </Routes>
         </div>
     );
