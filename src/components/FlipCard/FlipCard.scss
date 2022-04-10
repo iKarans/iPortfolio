@@ -1,0 +1,97 @@
+@import "../../sass/variables.scss";
+@import "../../sass/mixins.scss";
+@import "../../sass/resets.scss";
+@import "../../sass/typography";
+
+.flip-card {
+    width: 100%;
+    height: 100%;
+    border: 3px solid $primary-color;
+    border-radius: 4px;
+    &:hover {
+        .flip-card__inner {
+            transform: rotateY(180deg);
+        }
+    }
+    &__inner {
+        width: 100%;
+        height: 100%;
+        transition: transform 1s  ease-in-out;
+        transform-style: preserve-3d;
+        position: relative;
+        &__front {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+            &__project-img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform: rotateY(180deg);
+            backface-visibility: hidden;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto auto;
+            grid-gap: 10px;
+            padding: 5%;
+            &__heading {
+                grid-column: 1 / 3;
+                justify-self: center;
+                font-weight: 500;
+                text-decoration: underline;
+                font-size: 20px;
+            }
+            &__info {
+                grid-column: 1 / 3;
+                font-size: 13px;
+                font-weight: 400;
+                text-align: center;
+            }
+            &__tools {
+                width: 100%;
+                margin: auto;
+                grid-column: 1 / 3;
+                font-size: 13px;
+                display: flex;
+                justify-content: center;
+                z-index: 0;
+                &__logos {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    font-size: 13px;
+                    margin-left: 10px;
+                }
+            }
+            &__link {
+                color: white;
+                text-decoration: none;
+                justify-self: center;
+                z-index: 0;
+                &__rocket {
+                    font-size: 20px;
+                    z-index: 0;
+                }
+                &__code {
+                    font-size: 20px;
+                    z-index: 0;   
+                }
+                &__single {
+                    grid-column: 1 / -1;
+                    z-index: 0;
+                }
+            }
+            &__link:hover {
+                color: #3F8EFC;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
