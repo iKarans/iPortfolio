@@ -4,5 +4,5 @@ export interface IPortfolio {
     info: string;
     tools: string;
     githutLink: string;
-    projectLink: string;
+    projectLink: string | null;
 }

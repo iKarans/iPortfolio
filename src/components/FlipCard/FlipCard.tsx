@@ -1,7 +1,6 @@
 import React from 'react';
 import "./FlipCard.scss";
 
-import calculator from "../../assets/iCalculator.png";
 import { IPortfolio } from '../../modals/modals';
 
 import { FaRocket, FaCode } from 'react-icons/fa';
@@ -16,7 +15,7 @@ export const FlipCard: React.FC<FlipCardProps> = ({project}) => {
             <div className="flip-card">
                 <div className="flip-card__inner">
                     <div className="flip-card__inner__front">
-                        <img src={calculator} alt="project" className="flip-card__inner__front__project-img" />
+                        <img src={require(`../../assets/${title}.png`)} alt="project" className="flip-card__inner__front__project-img" />
                     </div>
                     <div className="flip-card__inner__back">
                         <h4 className="flip-card__inner__back__heading">{title}</h4>
@@ -25,9 +24,10 @@ export const FlipCard: React.FC<FlipCardProps> = ({project}) => {
                         <a href={githutLink} target="_blank" className="flip-card__inner__back__link">
                             <FaRocket className="flip-card__inner__back__link__rocket"/>
                         </a>
-                        <a href={projectLink} target="_blank" className="flip-card__inner__back__link">
+                        {projectLink && <a href={projectLink} target="_blank" className="flip-card__inner__back__link">
                             <FaCode className="flip-card__inner__back__link__code" />
-                        </a>
+                        </a>}
+      
                     </div>
                 </div>
             </div>

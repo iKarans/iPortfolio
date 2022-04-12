@@ -14,7 +14,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({}) => {
         return (
             <div className="portfolio">
                 <Title title={"Portfolio.()"} className={"portfolio__title"}/>
-                <LanguagesFilter filter={filter} languages={["All", "Javascript", "React.JS", "Java", "Other"]} setFilter={setFilter} />
+                <LanguagesFilter filter={filter} languages={["All", "Javascript", "React", "Java", "Other"]} setFilter={setFilter} />
                 <div className="portfolio__gallery">
                     {projects.filter(project => filter == "All" ? true : project.language == filter).map((project, index) => <FlipCard project={project} key={index} />)}
                 </div>
