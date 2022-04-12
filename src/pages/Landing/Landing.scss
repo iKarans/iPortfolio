@@ -16,6 +16,7 @@ $memoji-height: 300px;
     justify-items: center;
     &__heading {
         align-self: end;
+        justify-self: start;
         text-align: start;
         justify-self: start;
         font-size: $heading-font;
@@ -29,9 +30,8 @@ $memoji-height: 300px;
         display: grid;
         grid-template-columns: auto 1fr auto;
         grid-template-rows: auto auto;
-        grid-gap: 10px;
+        grid-gap: 20px;
         height: 60%;
-        width: 90%;
         &__quote {
             grid-column: 2 / 3;
             grid-row: 2 / 3;

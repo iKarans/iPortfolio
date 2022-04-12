@@ -15,7 +15,7 @@ export const LanguagesFilter: React.FC<LanguagesFilterProps> = ({languages, setF
         return (
             <ul className='languages-filter'>
                 {languages.map((language, index) => {
-                    return (<li className={`languages-filter__language-selected"}`} key={index} onClick={(e) => handleClick(e) }>{language}</li>);
+                    return (<li className={`languages-filter__${filter == language ? "language-selected" : "language"}`} key={index} onClick={(e) => handleClick(e) }>{language}</li>);
                 })}
             </ul>
         );
