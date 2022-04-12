@@ -12,9 +12,11 @@ interface PortfolioProps {
 export const Portfolio: React.FC<PortfolioProps> = ({}) => {
         return (
             <div className="portfolio">
-                <Title title={"Portfolio.()"} />
+                <Title title={"Portfolio.()"} className={"portfolio__title"}/>
                 <LanguagesFilter languages={["All", "Javascript", "React.JS", "Java", "Other"]} />
-                {projects.map((project, index) => <FlipCard project={project} />)}
+                <div className="portfolio__gallery">
+                    {projects.map((project, index) => <FlipCard project={project} />)}
+                </div>
             </div>
         );
 }

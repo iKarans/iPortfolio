@@ -5,11 +5,11 @@
 
 $heading-font: 53px;
 $quote-font: 26px;
-$memoji-height: 325px;
+$memoji-height: 300px;
 
 .landing {
     display: grid;
-    grid-gap: 10px;;
+    grid-gap: 20px;;
     padding: 0 5%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;

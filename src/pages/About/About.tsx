@@ -11,7 +11,7 @@ interface AboutProps {
 export const About: React.FC<AboutProps> = ({}) => {
         return (
             <div className="about">
-                <Title title={"About.()"} />
+                <Title title={"About.()"} className="about__title"/>
                 <p className="about__about-me">
                     I am a Mathematics with Economics graduate from the London School of Economics who fell down the rabbit hole of programming and software.
                     <br />
