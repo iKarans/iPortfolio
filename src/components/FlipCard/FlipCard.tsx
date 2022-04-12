@@ -2,12 +2,16 @@ import React from 'react';
 import "./FlipCard.scss";
 
 import calculator from "../../assets/iCalculator.png";
+import { IPortfolio } from '../../modals/modals';
+
+import { FaRocket, FaCode } from 'react-icons/fa';
 
 interface FlipCardProps {
-    
+    project: IPortfolio;
 }
 
-export const FlipCard: React.FC<FlipCardProps> = ({}) => {
+export const FlipCard: React.FC<FlipCardProps> = ({project}) => {
+    const {title, info , tools, githutLink, projectLink} = project;
         return (
             <div className="flip-card">
                 <div className="flip-card__inner">
@@ -15,14 +19,14 @@ export const FlipCard: React.FC<FlipCardProps> = ({}) => {
                         <img src={calculator} alt="project" className="flip-card__inner__front__project-img" />
                     </div>
                     <div className="flip-card__inner__back">
-                        <h4 className="flip-card__inner__back__heading">iCalculator</h4>
-                        <p className="flip-card__inner__back__info">A calculator that mimics the functionality of the iOS calculator app.</p>
-                        <p className="flip-card__inner__back__tools">Tools: <span className="flip-card__inner__back__tools__logos">HTML | SASS | CSS | JavaScript </span></p>
-                        <a href="https://ikarans.github.io/iCalculator/" target="_blank" className="flip-card__inner__back__link">
-                            <i className="fas fa-rocket flip-card__inner__back__link__rocket"></i>
+                        <h4 className="flip-card__inner__back__heading">{title}</h4>
+                        <p className="flip-card__inner__back__info">{info}</p>
+                        <p className="flip-card__inner__back__tools">Tools: <span className="flip-card__inner__back__tools__logos">{tools}</span></p>
+                        <a href={githutLink} target="_blank" className="flip-card__inner__back__link">
+                            <FaRocket className="flip-card__inner__back__link__rocket"/>
                         </a>
-                        <a href="https://github.com/iKarans/iCalculator" target="_blank" className="flip-card__inner__back__link">
-                            <i className="fas fa-code flip-card__inner__back__link__code"></i>
+                        <a href={projectLink} target="_blank" className="flip-card__inner__back__link">
+                            <FaCode className="flip-card__inner__back__link__code" />
                         </a>
                     </div>
                 </div>

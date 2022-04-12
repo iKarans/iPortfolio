@@ -4,6 +4,7 @@ import { LanguagesFilter } from '../../components/LanguagesFilter/LanguagesFilte
 import { Title } from '../../components/Title/Title';
 import "./Portfolio.scss";
 
+import projects from "../../data/projects";
 interface PortfolioProps {
 
 }
@@ -13,7 +14,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({}) => {
             <div className="portfolio">
                 <Title title={"Portfolio.()"} />
                 <LanguagesFilter languages={["All", "Javascript", "React.JS", "Java", "Other"]} />
-                <FlipCard />
+                {projects.map((project, index) => <FlipCard project={project} />)}
             </div>
         );
 }
