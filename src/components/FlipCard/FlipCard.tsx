@@ -11,7 +11,7 @@ interface FlipCardProps {
 }
 
 export const FlipCard: React.FC<FlipCardProps> = ({project}) => {
-    const {title, info , tools, githutLink, projectLink} = project;
+    const {language, title, info , tools, githutLink, projectLink} = project;
         return (
             <div className="flip-card">
                 <div className="flip-card__inner">

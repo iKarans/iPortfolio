@@ -9,4 +9,14 @@
     align-items: center;
     font-size: 24px;
     font-weight: 400;
+    li {
+        cursor: pointer;
+    }
+    &__language {
+
+    }
+    &__language-selected {
+        background-color: $primary-color;
+        padding: 5px;
+    }
 }

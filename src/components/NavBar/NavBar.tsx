@@ -14,7 +14,7 @@ export const NavBar: React.FC<NavBarProps> = ({navLinks}) => {
                 <img src={memoji} alt="Karan Memoji" className="nav-bar__memoji" />
                 <ul className="nav-bar__links">
                     {navLinks.map((link, index) => {
-                        return <li className='nav-bar__links__link'>
+                        return <li className='nav-bar__links__link' key={index}>
                             <Link to={link == "Home" ? "/" : link}>{link}</Link>
                         </li>
                     })}
