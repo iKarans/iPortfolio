@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from "axios";
 import { Link } from 'react-router-dom';
 import "./Landing.scss";
 
@@ -14,6 +15,17 @@ interface LandingProps {
 }
 
 export const Landing: React.FC<LandingProps> = ({}) => {
+
+    const [quote, setQuote] = useState<string>("If you have time to fantasize about a beautiful end, then just live beautifully 'til the end.")
+
+    const BASE_URL: string = "http://localhost:8080/quotes";
+
+    useEffect(() => {
+        axios.get(`${BASE_URL}?category=Portfolio`)
+        .then(response => setQuote(response.data[Math.floor(response.data.length * Math.random())].quote))
+        .catch(error => console.log(error));
+    },[BASE_URL])
+
         return (
             <div className="landing">
                 <h1 className="landing__heading">
@@ -31,7 +43,7 @@ export const Landing: React.FC<LandingProps> = ({}) => {
                 <div className="landing__quote-container">
                     <FaQuoteLeft className="landing__quote-container__left-marks"/>
                     <FaQuoteRight className="landing__quote-container__right-marks" />
-                    <p className="landing__quote-container__quote">If you have time to fantasize about a beautiful end, then just live beautifully 'til the end.</p>
+                    <p className="landing__quote-container__quote">{quote}</p>
                 </div>
                 <Link to={"/About"} className="landing__explore">Let's Explore</Link>
                 <img src={memoji} className="landing__memoji" alt="Memoji" />

@@ -122,7 +122,7 @@ function App() {
                     retina_detect: true
                 }}
             />
-            <NavBar navLinks={["Home", "About", "Portfolio", "Contact"]} />
+            <NavBar navLinks={["Home", "About", "Portfolio"]} />
             <Routes>
                 <Route path="/" element={<Landing />} />
                 <Route path="/About" element={<About />} />
