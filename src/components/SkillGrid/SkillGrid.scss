@@ -3,6 +3,9 @@
 @import "../../sass/resets.scss";
 @import "../../sass/typography";
 
+$icon-size: 40px;
+$text-font: 24px;
+
 .skill-grid {
     border: 5px solid #3F8EFC;
     border-radius: 50px;
@@ -14,18 +17,18 @@
     grid-gap: 10px;
     width: 100%;
     height: 100%;
-    padding: 5%;
+    padding: 2.5% 2.5%;
     &__heading {
         font-size: 40px;
         text-align: center;
         grid-column: 1 / 3;
-        font-weight: 700;
+        font-weight: 50;
     }
-    &__icon {
-        font-size: 40px;
+    svg{
+        font-size: $icon-size;
     }
     &__text {
-        font-size: 24px;
+        font-size: $text-font;
     }
 
 }

@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import "./Landing.scss";
 
 import memoji from "../../assets/Memoji-Landing.png";
-import { LeftQuote } from '../../components/LeftQuote/LeftQuote';
-import { RightQuote } from '../../components/RightQuote/RightQuote';
 
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
