@@ -3,27 +3,32 @@
 @import "../../sass/resets.scss";
 @import "../../sass/typography";
 
+// same as landing
+
+$nav-font: 26px;
+$memoji-height: 35px;
+
 .nav-bar {
-    height: 8vh;
-    padding: 5px 2.5% 5px 2.5%;
+    height: 60px;
+    padding: 10px 2.5% 10px 2.5%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: sticky;
     top: 0;
-    font-size: 25px;
+    font-size: $nav-font;
     font-weight: 700;
     background-color: rgba(31, 32, 38, 0.9);
     z-index: 1;
     &__memoji {
-        height : 35px;
+        height : $memoji-height;
         object-fit: contain;
     }
     &__links {
         display: flex;
         flex: 0.9;
         justify-content: space-around;
-        align-items: center;;
+        align-items: center;
         &__link {
             a {
                 &:hover {
@@ -37,5 +42,15 @@
         justify-content: space-between;
         align-items: center;
         flex: 0.1;
+        &__social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+                &:hover {
+                    fill: $primary-color;
+                }
+            }
+        }
     }
 }

@@ -4,6 +4,7 @@ import "./NavBar.scss";
 import memoji from "../../assets/Memoji-Nav.png";
 import { FaLinkedinIn, FaFileDownload, FaGithubSquare } from 'react-icons/fa';
 
+
 interface NavBarProps {
     navLinks: string[],
 }
@@ -11,7 +12,7 @@ interface NavBarProps {
 export const NavBar: React.FC<NavBarProps> = ({navLinks}) => {
         return (
             <nav className='nav-bar'>
-                <img src={memoji} alt="Karan Memoji" className="nav-bar__memoji" />
+                <img src={memoji} alt="Memoji" className="nav-bar__memoji" />
                 <ul className="nav-bar__links">
                     {navLinks.map((link, index) => {
                         return <li className='nav-bar__links__link' key={index}>
@@ -20,9 +21,15 @@ export const NavBar: React.FC<NavBarProps> = ({navLinks}) => {
                     })}
                 </ul>
                 <div className="nav-bar__socials">
-                    <FaLinkedinIn className="nav-bar__socials__linked-in "/>
-                    <FaGithubSquare className="nav-bar__socials__github"/>
-                    <FaFileDownload className="nav-bar__socials__downlaod"/>
+                    <a href="https://www.linkedin.com/in/karan-sivalingam/" target="_blank" className="nav-bar__socials__social">
+                        <FaLinkedinIn className="nav-bar__socials__social__linked-in"/>
+                    </a>
+                    <a href="https://github.com/iKarans/" target="_blank" className="nav-bar__socials__social">
+                        <FaGithubSquare className="nav-bar__socials__social__github"/>
+                    </a>
+                    <a href={require(`../../assets/CV.pdf`)} download className="nav-bar__socials__social">
+                        <FaFileDownload className="nav-bar__socials__social__cv"/>
+                    </a>
                 </div>
             </nav>
         );

@@ -6,6 +6,9 @@ import memoji from "../../assets/Memoji-Landing.png";
 import { LeftQuote } from '../../components/LeftQuote/LeftQuote';
 import { RightQuote } from '../../components/RightQuote/RightQuote';
 
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
+
+
 import Typewriter from 'typewriter-effect';
 
 interface LandingProps {
@@ -28,8 +31,8 @@ export const Landing: React.FC<LandingProps> = ({}) => {
                     A Software Developer.
                 </h1>
                 <div className="landing__quote-container">
-                    <LeftQuote color={"#3f8dfb"} height={"45px"} />
-                    <RightQuote color={"#3f8dfb"} height={"45px"} />
+                    <FaQuoteLeft className="landing__quote-container__left-marks"/>
+                    <FaQuoteRight className="landing__quote-container__right-marks" />
                     <p className="landing__quote-container__quote">If you have time to fantasize about a beautiful end, then just live beautifully 'til the end.</p>
                 </div>
                 <Link to={"/About"} className="landing__explore">Let's Explore</Link>
