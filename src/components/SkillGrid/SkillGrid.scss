@@ -1,9 +1,8 @@
 @import "../../sass/variables.scss";
 @import "../../sass/mixins.scss";
 @import "../../sass/resets.scss";
-@import "../../sass/typography";
 
-$icon-size: 40px;
+$heading-font: 40px;
 $text-font: 24px;
 
 .skill-grid {
@@ -14,18 +13,19 @@ $text-font: 24px;
     grid-template-rows: repeat(1fr, 7);
     align-items: center;
     justify-items: start;
-    grid-gap: 10px;
+    grid-gap: 20px;
     width: 100%;
     height: 100%;
     padding: 2.5% 2.5%;
     &__heading {
-        font-size: 40px;
+        font-size: $heading-font;
         text-align: center;
+        justify-self: center;
         grid-column: 1 / 3;
-        font-weight: 50;
+        font-weight: 500;
     }
     svg{
-        font-size: $icon-size;
+        font-size: $heading-font;
     }
     &__text {
         font-size: $text-font;

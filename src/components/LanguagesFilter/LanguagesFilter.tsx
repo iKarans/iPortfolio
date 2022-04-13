@@ -8,7 +8,7 @@ interface LanguagesFilterProps {
 }
 
 export const LanguagesFilter: React.FC<LanguagesFilterProps> = ({languages, setFilter, filter}) => {
-    const handleClick = (e: React.MouseEvent<HTMLLIElement>) => {
+    const handleClick = (e: React.MouseEvent<HTMLLIElement>): void => {
         const liElement = e.target as HTMLLIElement;
         setFilter(liElement.innerText);
     }

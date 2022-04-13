@@ -21,13 +21,12 @@ export const FlipCard: React.FC<FlipCardProps> = ({project}) => {
                         <h4 className="flip-card__inner__back__heading">{title}</h4>
                         <p className="flip-card__inner__back__info">{info}</p>
                         <p className="flip-card__inner__back__tools">Tools: <span className="flip-card__inner__back__tools__langs">{tools}</span></p>
-                        <a href={githutLink} target="_blank" className="flip-card__inner__back__link">
-                            <FaRocket className="flip-card__inner__back__link__rocket"/>
-                        </a>
-                        {projectLink && <a href={projectLink} target="_blank" className="flip-card__inner__back__link">
+                        <a href={githutLink} target="_blank" className={`flip-card__inner__back__${projectLink ? "link" : "single"}`}>
                             <FaCode className="flip-card__inner__back__link__code" />
+                        </a>
+                        {projectLink && <a href={projectLink} target="_blank" >
+                            <FaRocket className={`flip-card__inner__back__link__${projectLink ? "rocket" : "single"}`} />
                         </a>}
-      
                     </div>
                 </div>
             </div>
