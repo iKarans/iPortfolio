@@ -1,8 +1,7 @@
-@import "../../sass/variables.scss";
-@import "../../sass/mixins.scss";
-@import "../../sass/resets.scss";
-
-$text-font: 20px;
+@use "../../sass/variables.scss" as *;
+// @import "../../sass/mixins.scss";
+// @import "../../sass/resets.scss";
+// @import "../../sass/typography.scss";
 
 .about {
     display: grid;
@@ -16,7 +15,5 @@ $text-font: 20px;
     &__about-me {
         grid-column: 1 / 3;
         text-align: center;
-        font-weight: 500;
-        font-size: $text-font;
     }
 }

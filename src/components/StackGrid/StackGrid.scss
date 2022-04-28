@@ -1,9 +1,9 @@
-@import "../../sass/variables.scss";
-@import "../../sass/mixins.scss";
-@import "../../sass/resets.scss";
+@use "../../sass/variables.scss" as *;
+
+$svg-size: 40px;
 
 .stack-grid {
-    border: 5px solid #3F8EFC;
+    border: 5px solid $primary-blue;
     border-radius: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -13,14 +13,15 @@
     grid-gap: 10px;
     width: 100%;
     height: 100%;
-    padding: 2.5% 2.5%;
+    padding: 5%;
     &__heading {
-        font-size: 40px;
         text-align: center;
         grid-column: 1 / 4;
-        font-weight: 500;
     }
     svg {
-        font-size: 40px;
+        font-size: $svg-size;
+        &:hover {
+            fill: $primary-blue;
+        }
     }
 }

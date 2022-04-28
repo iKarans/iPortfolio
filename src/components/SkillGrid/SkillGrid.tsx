@@ -12,17 +12,17 @@ export const SkillGrid: React.FC<SkillGridProps> = ({}) => {
             <div className="skill-grid">
                 <h2 className="skill-grid__heading">Skills</h2>
                 <FaMobileAlt className='skill-grid__icon' />
-                <p className="skill-grid__text">Mobile first / Responsive Development</p>
+                <span className="skill-grid__text">Mobile first / Responsive Development</span>
                 <FaBug className='skill-grid__icon' />
-                <p className="skill-grid__text">Debugging</p>
+                <span className="skill-grid__text">Debugging</span>
                 <FaPeopleArrows className='skill-grid__icon' />
-                <p className="skill-grid__text">Pair Programming</p>
+                <span className="skill-grid__text">Pair Programming</span>
                 <FaObjectGroup className='skill-grid__icon' />
-                <p className="skill-grid__text">Object Oriented Programing</p>
+                <span className="skill-grid__text">Object Oriented Programing</span>
                 <FaRunning className='skill-grid__icon' />
-                <p className="skill-grid__text">Agile Development</p>
+                <span className="skill-grid__text">Agile Development</span>
                 <FaUserCheck className='skill-grid__icon' />
-                <p className="skill-grid__text">Test Driven Development</p>
+                <span className="skill-grid__text">Test Driven Development</span>
             </div>
         );
 }

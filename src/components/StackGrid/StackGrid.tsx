@@ -10,7 +10,7 @@ interface StackGridProps {
 export const StackGrid: React.FC<StackGridProps> = ({}) => {
         return (
             <div className="stack-grid">
-                <h3 className="stack-grid__heading">Stack</h3>
+                <h2 className="stack-grid__heading">Stack</h2>
                 <FaHtml5 className='stack-grid__html' />
                 <FaCss3Alt className='stack-grid__css' />
                 <FaSass className='stack-grid__sass' />

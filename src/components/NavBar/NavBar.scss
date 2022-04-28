@@ -1,6 +1,7 @@
-@import "../../sass/variables.scss";
-@import "../../sass/mixins.scss";
-@import "../../sass/resets.scss";
+@use "../../sass/variables.scss" as *;
+// @import "../../sass/mixins.scss";
+// @import "../../sass/resets.scss";
+// @import "../../sass/typography.scss";
 
 // same as landing
 
@@ -31,7 +32,7 @@ $memoji-height: 35px;
         &__link {
             a {
                 &:hover {
-                    color: $primary-color;
+                    color: $primary-blue;
                 }
             }
         }
@@ -47,7 +48,7 @@ $memoji-height: 35px;
             justify-content: center;
             svg {
                 &:hover {
-                    fill: $primary-color;
+                    fill: $primary-blue;
                 }
             }
         }

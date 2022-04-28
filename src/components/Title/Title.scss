@@ -1,12 +1,16 @@
-@import "../../sass/variables.scss";
-@import "../../sass/mixins.scss";
-@import "../../sass/resets.scss";
+@use "../../sass/variables.scss" as *;
+// @import "../../sass/mixins.scss";
+// @import "../../sass/resets.scss";
+// @import "../../sass/typography.scss";
 
 .title {
-    font-size: 45px;
-    font-weight: 700;
-    border-bottom: 3px solid $primary-color;
-    padding: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__underline {
+        border-bottom: 3px solid $primary-blue;
+        padding: 0 0 10px 0;
+    }
 }
 
 .about__title {

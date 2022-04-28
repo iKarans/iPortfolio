@@ -43,7 +43,7 @@ export const Landing: React.FC<LandingProps> = ({}) => {
                 <div className="landing__quote-container">
                     <FaQuoteLeft className="landing__quote-container__left-marks"/>
                     <FaQuoteRight className="landing__quote-container__right-marks" />
-                    <p className="landing__quote-container__quote">{quote}</p>
+                    <h3 className="landing__quote-container__quote">{quote}</h3>
                 </div>
                 <Link to={"/About"} className="landing__explore">Let's Explore</Link>
                 <img src={memoji} className="landing__memoji" alt="Memoji" />

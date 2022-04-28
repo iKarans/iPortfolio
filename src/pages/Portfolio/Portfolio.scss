@@ -1,6 +1,4 @@
-@import "../../sass/variables.scss";
-@import "../../sass/mixins.scss";
-@import "../../sass/resets.scss";
+@use "../../sass/variables.scss" as *;
 
 .portfolio {
     display: grid;

@@ -1,0 +1,55 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+
+* {
+    font-family: $inter;
+    color: $primary-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+// adding display and width prevents margin collapse on these semantic text elements
+    margin: 0.5rem 0;
+    display: inline-block;
+    width: 100%;
+}
+
+h1 {
+    font-size: toRem(44);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: toRem(40);
+    font-weight: 600;
+}
+
+h3 {
+    font-size: toRem(24);
+    font-weight: 500;
+}
+
+p {
+    font-size: toRem(20);
+    font-weight: 500;
+}
+
+
+@media screen and (min-width: $tablet-breakpoint) {
+// increases font-size of all items by 10%
+:root {
+    font-size: 110%;
+}
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+// increases font-size of all items by 20%
+:root {
+    font-size: 120%;
+}
+}

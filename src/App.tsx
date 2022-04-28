@@ -1,14 +1,14 @@
 import React from 'react';
 import Particles from "react-tsparticles";
-import logo from './logo.svg';
 import { Routes, Route, Link } from "react-router-dom";
 import './App.css';
-import particlesOptions from "./particles.json";
-import { ISourceOptions } from "tsparticles";
 import { Landing } from './pages/Landing/Landing';
 import { NavBar } from './components/NavBar/NavBar';
 import { About } from './pages/About/About';
 import { Portfolio } from './pages/Portfolio/Portfolio';
+
+import "./sass/main.scss";
+import { Contact } from './pages/Contact/Contact';
 
 function App() {
     return (
@@ -122,11 +122,12 @@ function App() {
                     retina_detect: true
                 }}
             />
-            <NavBar navLinks={["Home", "About", "Portfolio"]} />
+            <NavBar navLinks={["Home", "About", "Portfolio", "Contact"]} />
             <Routes>
                 <Route path="/" element={<Landing />} />
                 <Route path="/About" element={<About />} />
                 <Route path="/Portfolio" element={<Portfolio />} />
+                <Route path="/Contact" element={<Contact />} />
             </Routes>
         </div>
     );

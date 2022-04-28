@@ -1,10 +1,10 @@
-@import "../../sass/variables.scss";
-@import "../../sass/mixins.scss";
-@import "../../sass/resets.scss";
+@use "../../sass/variables.scss" as *;
+@use "../../sass/mixins.scss" as *;
+// @import "../../sass/resets.scss";
+// @import "../../sass/typography.scss";
 
-$heading-font: 53px;
-$quote-font: 26px;
 $memoji-height: 300px;
+$svg-size: 53px;
 
 .landing {
     display: grid;
@@ -15,13 +15,11 @@ $memoji-height: 300px;
     justify-items: center;
     &__heading {
         align-self: end;
-        justify-self: start;
         text-align: start;
         justify-self: start;
-        font-size: $heading-font;
         height: 60%;
         &__karan {
-            color: $primary-color;
+            color: $primary-blue;
         }
     }
     &__quote-container {
@@ -32,8 +30,8 @@ $memoji-height: 300px;
         grid-gap: 20px;
         height: 60%;
         svg {
-            font-size: $heading-font;
-            fill: $primary-color;
+            font-size: $svg-size;
+            fill: $primary-blue;
         }
         &__right-marks {
             grid-row: 1 / 2;
@@ -46,9 +44,7 @@ $memoji-height: 300px;
         &__quote {
             grid-column: 2 / 3;
             grid-row: 2 / 3;
-            font-size: $quote-font;
             text-align: center;
-            font-weight: 500;
         }
     }
     &__memoji {
@@ -62,15 +58,15 @@ $memoji-height: 300px;
         justify-content: center;
         align-self: start;
         width: 50%;
-        height: $heading-font;
+        height: $svg-size;
         border-radius: 25px;
-        background-color: $primary-color;
-        font-size: $quote-font;
+        background-color: $primary-blue;
+        font-size: 24px;
         font-weight: 500;
         justify-self: start;
         &:hover {
-            background-color: $text-color;
-            color: $primary-color;
+            background-color: $primary-white;
+            color: $primary-blue;
         }
     }
 }

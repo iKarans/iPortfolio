@@ -8,8 +8,10 @@ interface TitleProps {
 
 export const Title: React.FC<TitleProps> = ({title, className}) => {
         return (
-            <span className={`title ${className}`}>
-                {title}
-            </span>
+            <h1 className={`title ${className}`}>
+                <span className={`title__underline`}>
+                    {title}
+                </span>
+            </h1>
         );
 }

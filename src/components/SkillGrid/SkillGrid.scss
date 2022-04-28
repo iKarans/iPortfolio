@@ -1,12 +1,12 @@
-@import "../../sass/variables.scss";
-@import "../../sass/mixins.scss";
-@import "../../sass/resets.scss";
+@use "../../sass/variables.scss" as *;
+@use "../../sass/mixins.scss" as *;
 
-$heading-font: 40px;
+
+$svg-size: 40px;
 $text-font: 24px;
 
 .skill-grid {
-    border: 5px solid #3F8EFC;
+    border: 5px solid $primary-blue;
     border-radius: 50px;
     display: grid;
     grid-template-columns: auto 1fr;
@@ -16,19 +16,23 @@ $text-font: 24px;
     grid-gap: 20px;
     width: 100%;
     height: 100%;
-    padding: 2.5% 2.5%;
+    padding: 5%;
     &__heading {
-        font-size: $heading-font;
         text-align: center;
         justify-self: center;
         grid-column: 1 / 3;
-        font-weight: 500;
     }
     svg{
-        font-size: $heading-font;
+        font-size: $svg-size;
+        &:hover {
+            fill: $primary-blue;
+        }
     }
     &__text {
         font-size: $text-font;
+        &:hover {
+            fill: $primary-blue;
+        }
     }
 
 }

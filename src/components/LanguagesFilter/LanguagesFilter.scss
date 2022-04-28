@@ -1,8 +1,7 @@
-@import "../../sass/variables.scss";
-@import "../../sass/mixins.scss";
-@import "../../sass/resets.scss";
+@use "../../sass/variables.scss" as *;
+@use "../../sass/mixins.scss" as *;
 
-$filter-font: 22px;
+$filter-font: toRem(22);
 
 .languages-filter {
     display: flex;
@@ -14,7 +13,7 @@ $filter-font: 22px;
         cursor: pointer;
     }
     &__language-selected {
-        background-color: $primary-color;
+        background-color: $primary-blue;
         padding: 5px;
     }
 }
