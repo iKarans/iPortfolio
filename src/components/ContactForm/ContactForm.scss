@@ -1,3 +1,19 @@
 @use "../../sass/variables.scss" as *;
 @use "../../sass/mixins.scss" as *;
 
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto 1fr auto;
+    grid-gap: toRem(5);
+    height: 100%;
+    input {
+        height: toRem(40);
+        // border: toRem(2) solid $primary-blue;
+    }
+    &__submit-btn {
+        background-color: $primary-blue;
+        height: toRem(40);
+        width: 50%;
+    }
+}

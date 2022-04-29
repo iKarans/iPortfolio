@@ -2,18 +2,19 @@
 @use "../../sass/mixins.scss" as *;
 
 
-$svg-size: 40px;
+$svg-size: toRem(40);
 $text-font: 24px;
 
 .skill-grid {
-    border: 5px solid $primary-blue;
-    border-radius: 50px;
+    border: toRem(5) solid $primary-blue;
+    border-radius: toRem(50);
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: repeat(1fr, 7);
     align-items: center;
     justify-items: start;
-    grid-gap: 20px;
+    row-gap: toRem(10);
+    column-gap: toRem(20);
     width: 100%;
     height: 100%;
     padding: 5%;
