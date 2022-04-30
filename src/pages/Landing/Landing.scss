@@ -17,6 +17,7 @@ $svg-size: toRem(44);
         text-align: start;
         justify-self: start;
         height: 60%;
+        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         &__karan {
             color: $primary-blue;
         }
@@ -28,6 +29,7 @@ $svg-size: toRem(44);
         grid-template-rows: auto auto;
         grid-gap: toRem(20);
         height: 60%;
+        animation: slide-in-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         svg {
             font-size: $svg-size;
             fill: $primary-blue;
@@ -50,6 +52,7 @@ $svg-size: toRem(44);
         height: $memoji-height;
         object-fit: contain;
         align-self: start;
+        animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     &__explore {
         display: flex;
@@ -63,6 +66,7 @@ $svg-size: toRem(44);
         font-size: toRem(20);
         font-weight: 500;
         justify-self: start;
+        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         &:hover {
             background-color: $primary-white;
             color: $primary-blue;
