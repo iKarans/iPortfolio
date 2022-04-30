@@ -5,7 +5,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr;
     grid-gap: 20px;
-    padding: 0 5%;
+    padding: 1% 5%;
+    min-height: 92vh;
     &__gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

@@ -12,7 +12,7 @@ interface NavBarProps {
 export const NavBar: React.FC<NavBarProps> = ({navLinks}) => {
         return (
             <nav className='nav-bar'>
-                <img src={memoji} alt="Memoji" className="nav-bar__memoji" />
+                <a href="https://www.youtube.com/watch?start=118&end=219.741&v=bE7nAi5xA4U&feature=youtu.be" target="black_" ><img src={memoji} alt="Memoji" className="nav-bar__memoji" /></a>
                 <ul className="nav-bar__links">
                     {navLinks.map((link, index) => {
                         return <li className='nav-bar__links__link' key={index}>

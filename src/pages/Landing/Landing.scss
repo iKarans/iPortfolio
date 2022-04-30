@@ -7,9 +7,10 @@ $svg-size: toRem(44);
 .landing {
     display: grid;
     grid-gap: toRem(20);
-    padding: 0 5%;
+    padding: 1% 5%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    min-height: 92vh;
     justify-items: center;
     &__heading {
         align-self: end;

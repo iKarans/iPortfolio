@@ -6,10 +6,11 @@
     grid-gap: toRem(20);
     grid-template-columns: 2fr 3fr;
     grid-template-rows: auto 1fr;
-    padding: 0 5%;
+    padding: 1% 5%;
     align-items: center;
+    min-height: 92vh;
     &__map {
-        height: 500px;
+        height: 100%;
         &__popup {
         }
     }
