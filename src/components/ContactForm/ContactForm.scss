@@ -9,11 +9,19 @@
     height: 100%;
     input {
         height: toRem(40);
-        // border: toRem(2) solid $primary-blue;
+    }
+    &__message {
+        
     }
     &__submit-btn {
         background-color: $primary-blue;
         height: toRem(40);
-        width: 50%;
+        font-size: toRem(20);
+        font-weight: 500;
+        &:hover {
+            color: $primary-blue;
+            background-color: $primary-white;
+            cursor: pointer;
+        }
     }
 }

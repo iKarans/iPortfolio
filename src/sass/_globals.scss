@@ -1,1 +1,15 @@
 @use "./variables.scss" as *;
+@use "./mixins.scss" as *;
+input {
+    color: $background-black;
+    font-weight: 600;
+    padding: 2.5% 5%;
+    font-size: toRem(15);
+}
+
+textarea {
+    color: $background-black;
+    font-weight: 600;
+    padding: 2.5% 5%;
+    font-size: toRem(15);
+}

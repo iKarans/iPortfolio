@@ -26,7 +26,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({}) => {
                 <input type="text" name="name" placeholder="Name" className="contact-form__name" required />
                 <input type="email" name="email" placeholder="Email" className="contact-form__email" required />
                 <input type="text" name="subject" placeholder="Subject" className="contact-form__subject" required />
-                <input placeholder="Message" name="message" className="contact-form__message" required />
+                <textarea placeholder="Message" name="message" className="contact-form__message" required />
                 <button type="submit" className="contact-form__submit-btn" value="Send">Send</button>
             </form>
         );
