@@ -20,15 +20,18 @@ $text-font: 24px;
         text-align: center;
         justify-self: center;
         grid-column: 1 / 3;
+        animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     svg{
         font-size: $svg-size;
+        animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         &:hover {
             fill: $primary-blue;
         }
     }
     &__text {
         font-size: $text-font;
+        animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         &:hover {
             fill: $primary-blue;
         }

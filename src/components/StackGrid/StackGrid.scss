@@ -16,9 +16,11 @@ $svg-size: toRem(40);
     &__heading {
         text-align: center;
         grid-column: 1 / 4;
+        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     svg {
         font-size: $svg-size;
+        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         &:hover {
             fill: $primary-blue;
         }
