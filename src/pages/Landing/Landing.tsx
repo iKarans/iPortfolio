@@ -28,18 +28,20 @@ export const Landing: React.FC<LandingProps> = ({}) => {
 
         return (
             <div className="landing">
-                <h1 className="landing__heading">
-                    <Typewriter
-                    options={{
-                        strings: ["Hello.", "Kon'nichiwa.", "Vaṇakkam.", 
-                        "annyeonghasibnikka.", "Hola.", "Hallo.", "Ciao.", "Nǐ hǎo.", "'ahlan.", "namaste."],
-                        autoStart: true,
-                        loop: true,
-                    }}
-                    />
-                    I'm &lt;<span className="landing__heading__karan">Karan</span>&gt;<br></br>
-                    A Software Developer.
-                </h1>
+                <div className="landing__heading-container">
+                    <h1 className="landing__heading-container__heading">
+                        <Typewriter
+                        options={{
+                            strings: ["Hello.", "Kon'nichiwa.", "Vaṇakkam.", 
+                            "Hola.", "Hallo.", "Ciao.", "Nǐ hǎo.", "'ahlan.", "namaste."],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                        />
+                        I'm &lt;<span className="landing__heading-container__heading__karan">Karan</span>&gt;<br></br>
+                        A Software Developer.
+                    </h1>
+                </div>
                 <div className="landing__quote-container">
                     <FaQuoteLeft className="landing__quote-container__left-marks"/>
                     <FaQuoteRight className="landing__quote-container__right-marks" />

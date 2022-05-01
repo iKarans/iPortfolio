@@ -10,16 +10,30 @@ $svg-size: toRem(44);
     padding: 1% 5%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    @include mobile {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+        align-content: center;
+    }
     min-height: 92vh;
     justify-items: center;
-    &__heading {
-        align-self: end;
-        text-align: start;
-        justify-self: start;
+    &__heading-container {
         height: 60%;
-        animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        &__karan {
-            color: $primary-blue;
+        align-self: end;
+        justify-self: start;
+        @include mobile {
+            height: 100%;
+        }
+        &__heading {
+            text-align: start;
+            @include mobile {
+                text-align: center;
+            }
+            animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            &__karan {
+                color: $primary-blue;
+            }
         }
     }
     &__quote-container {
@@ -29,6 +43,9 @@ $svg-size: toRem(44);
         grid-template-rows: auto auto;
         grid-gap: toRem(20);
         height: 60%;
+        @include mobile {
+            height: 100%;
+        }
         animation: slide-in-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         svg {
             font-size: $svg-size;
@@ -52,6 +69,10 @@ $svg-size: toRem(44);
         height: $memoji-height;
         object-fit: contain;
         align-self: start;
+        @include mobile {
+            justify-self: center;
+            align-self: center;
+        }
         animation: slide-in-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     &__explore {
@@ -66,6 +87,10 @@ $svg-size: toRem(44);
         font-size: toRem(20);
         font-weight: 500;
         justify-self: start;
+        @include mobile {
+            justify-self: center;
+            grid-row: 4 / 5;
+        }
         animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         &:hover {
             background-color: $primary-white;

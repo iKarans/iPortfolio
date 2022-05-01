@@ -11,7 +11,14 @@
     min-height: 92vh;
     &__map {
         height: 100%;
-        &__popup {
+        width: 100%;
+        &__marker {
+            color: $primary-blue !important;
         }
     }
 }
+
+.leaflet-popup-content {
+    color: $primary-blue;
+}
+

@@ -39,17 +39,14 @@ p {
     font-weight: 500;
 }
 
+@include tablet {
+    :root {
+        font-size: 90%;
+    }
+    }
 
-@media screen and (min-width: $tablet-breakpoint) {
-// increases font-size of all items by 10%
+@include mobile {
 :root {
-    font-size: 110%;
-}
-}
-
-@media screen and (min-width: $desktop-breakpoint) {
-// increases font-size of all items by 20%
-:root {
-    font-size: 120%;
+    font-size: 70%;
 }
 }
