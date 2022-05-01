@@ -1,7 +1,7 @@
 @use "../../sass/variables.scss" as *;
 @use "../../sass/mixins.scss" as *;
 
-$memoji-height: toRem(250);
+$memoji-height: toRem(300);
 $svg-size: toRem(44);
 
 .landing {
@@ -22,6 +22,9 @@ $svg-size: toRem(44);
         height: 60%;
         align-self: end;
         justify-self: start;
+        display: flex;
+        align-items: flex-end;
+
         @include mobile {
             height: 100%;
         }
@@ -81,10 +84,10 @@ $svg-size: toRem(44);
         justify-content: center;
         align-self: start;
         width: 50%;
-        height: toRem(44);
+        height: toRem(54);
         border-radius: toRem(25);
         background-color: $primary-blue;
-        font-size: toRem(20);
+        font-size: toRem(24);
         font-weight: 500;
         justify-self: start;
         @include mobile {

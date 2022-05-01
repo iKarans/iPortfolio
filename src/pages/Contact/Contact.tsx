@@ -22,7 +22,6 @@ export const Contact: React.FC<ContactProps> = ({}) => {
         return (
                 <div className="contact">
                         <Title title="Contact" className="contact__title" />
-                        <ContactForm />
                         <MapContainer center={[51.511074, -0.377232]} zoom={13} scrollWheelZoom={false} className="contact__map">
                                 <TileLayer
                                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -34,6 +33,7 @@ export const Contact: React.FC<ContactProps> = ({}) => {
                                         </Popup>
                                 </Marker>
                         </MapContainer>
+                        <ContactForm />
                 </div>
         );
 }
