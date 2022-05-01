@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/iPortfolio/static/css/main.889028de.css",
+    "main.js": "/iPortfolio/static/js/main.57bc94f4.js",
+    "static/js/787.89cdefba.chunk.js": "/iPortfolio/static/js/787.89cdefba.chunk.js",
+    "static/media/Lujam.png": "/iPortfolio/static/media/Lujam.94e5cd1c801c5af530e1.png",
+    "static/media/iTracker.png": "/iPortfolio/static/media/iTracker.0726b4142ad171fa0523.png",
+    "static/media/iBeers.png": "/iPortfolio/static/media/iBeers.d3bece4e1d8852f61ece.png",
+    "static/media/iPortfolio.png": "/iPortfolio/static/media/iPortfolio.ee3c23290795f2475539.png",
+    "static/media/iTicTacToe2.png": "/iPortfolio/static/media/iTicTacToe2.1f96ca3d01d6949754e5.png",
+    "static/media/iQuotes.png": "/iPortfolio/static/media/iQuotes.3ec919f79f83eb6cfc7f.png",
+    "static/media/Memoji-Nav.png": "/iPortfolio/static/media/Memoji-Nav.13262d3ed485627fd4de.png",
+    "static/media/Memoji-Landing.png": "/iPortfolio/static/media/Memoji-Landing.bf07309bf61480bb18f3.png",
+    "static/media/iCalculator.png": "/iPortfolio/static/media/iCalculator.74bca9a6a6b049d03d37.png",
+    "static/media/iTicTacToe.png": "/iPortfolio/static/media/iTicTacToe.ba60569ac8de7a7f1c60.png",
+    "static/media/iDojo.png": "/iPortfolio/static/media/iDojo.ab563530ddb5239ebd64.png",
+    "static/media/iMorse.png": "/iPortfolio/static/media/iMorse.240567d56f670e794521.png",
+    "static/media/CV.pdf": "/iPortfolio/static/media/CV.80670893f1933ce3f403.pdf",
+    "index.html": "/iPortfolio/index.html",
+    "main.889028de.css.map": "/iPortfolio/static/css/main.889028de.css.map",
+    "main.57bc94f4.js.map": "/iPortfolio/static/js/main.57bc94f4.js.map",
+    "787.89cdefba.chunk.js.map": "/iPortfolio/static/js/787.89cdefba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.889028de.css",
+    "static/js/main.57bc94f4.js"
+  ]
+}
