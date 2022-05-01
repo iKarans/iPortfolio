@@ -27,6 +27,7 @@ $svg-size: toRem(44);
 
         @include mobile {
             height: 100%;
+            justify-self: center;
         }
         &__heading {
             text-align: start;
@@ -48,6 +49,7 @@ $svg-size: toRem(44);
         height: 60%;
         @include mobile {
             height: 100%;
+            max-width: 340px;
         }
         animation: slide-in-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         svg {
@@ -93,6 +95,8 @@ $svg-size: toRem(44);
         @include mobile {
             justify-self: center;
             grid-row: 4 / 5;
+            max-width: 300px;
+            height: toRem(70);
         }
         animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         &:hover {
