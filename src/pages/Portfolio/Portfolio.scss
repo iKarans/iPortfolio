@@ -1,4 +1,5 @@
 @use "../../sass/variables.scss" as *;
+@use "../../sass/mixins.scss" as *;
 
 .portfolio {
     display: grid;
@@ -12,5 +13,9 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(4, 250px);
         grid-gap: 20px;
+        @include mobile {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(10, 250px);
+        }
     }
 }

@@ -3,7 +3,7 @@
 
 
 $svg-size: toRem(40);
-// $text-font: 24px;
+$text-font: 24px;
 
 .skill-grid {
     border: toRem(5) solid $primary-blue;
@@ -30,8 +30,11 @@ $svg-size: toRem(40);
         }
     }
     &__text {
-        font-size: 24px;
+        font-size: $text-font;
         animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        @include mobile {
+            font-size: $text-font * 0.7;
+        }
         &:hover {
             fill: $primary-blue;
         }
