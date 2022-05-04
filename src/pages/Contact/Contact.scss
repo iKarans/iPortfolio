@@ -9,10 +9,6 @@
     padding: 1% 5%;
     align-items: center;
     min-height: 92vh;
-    @include mobile {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr 1fr
-    }
     &__map {
         height: 100%;
         width: 100%;
